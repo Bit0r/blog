@@ -32,18 +32,24 @@ Layout=
 0=默认
 ```
 
-3. 将`~/.config/fcitx5/conf/pinyin.conf`里的云拼音关闭
+3. 修改`~/.config/fcitx5/conf/pinyin.conf`，关闭云拼音
 ```ini
 CloudPinyinEnabled=False
 ```
 
-4. 在开始菜单里启用`Fcitx 5`
+4. 修改`~/.config/fcitx5/config`，关闭快速短语
+```ini
+[Behavior/DisabledAddons]
+0=quickphrase
+```
+
+5. 在开始菜单里启用`Fcitx 5`
 ![start-menu](../img/kubuntu/fcitx5/start-menu.webp)
 
-5. 清除所有`fcitx`和`ibus`的包，防止冲突
+6. 清除所有`fcitx`和`ibus`的包，防止冲突
 ![remove](../img/kubuntu/fcitx5/remove.webp)
 
-6. 删除KDE中的设置插件
+7. 删除KDE中的设置插件
 ![kde-fcitx](../img/kubuntu/fcitx5/kde-fcitx.webp)
 
-7. 重启电脑，默认输入法将变成`Fcitx 5`
+8. 重启电脑，默认输入法将变成`Fcitx 5`

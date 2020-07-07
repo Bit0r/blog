@@ -1,5 +1,5 @@
 ## 目录
-* [Kubuntu](#Kubuntu-20.04)
+* [Kubuntu](#Kubuntu-2004)
 * [命令行工具](#命令行工具)
 
 ## Kubuntu 20.04

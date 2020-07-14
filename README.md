@@ -6,6 +6,7 @@
 * [安装使用Fcitx 5输入法](kubuntu/fcitx5.md)
 * [在KDE中解放Alt键](kubuntu/alt.md)
 * [ssh记住passphrase](kubuntu/gpg-agent.md)
+* [KDE关闭任务栏分组](kubuntu/taskbar.md)
 
 ## 命令行工具
 * [压缩和解压](cli-tool/mtools.md)

@@ -9,8 +9,9 @@
 * [KDE关闭任务栏分组](kubuntu/taskbar.md)
 
 ## 命令行工具
-* [压缩和解压](cli-tool/mtools.md)
-* [文件查找](cli-tool/fd.md)
+* [压缩和解压](cli-tools/mtools.md)
+* [文件查找](cli-tools/fd.md)
+* [docker管理](cli-tools/lazydocker.md)
 
 ## 网络原理
 * [SMTP报文格式](network/smtp.md)

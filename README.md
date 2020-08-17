@@ -7,11 +7,13 @@
 * [在KDE中解放Alt键](kubuntu/alt.md)
 * [ssh记住passphrase](kubuntu/gpg-agent.md)
 * [KDE关闭任务栏分组](kubuntu/taskbar.md)
+* [Discover无法联网](kubuntu/discover.md)
 
 ## 命令行工具
 * [压缩和解压](cli-tools/mtools.md)
 * [文件查找](cli-tools/fd.md)
 * [docker管理](cli-tools/lazydocker.md)
+* [pip的使用方法](cli-tools/pip3.md)
 
 ## 网络原理
 * [SMTP报文格式](network/smtp.md)

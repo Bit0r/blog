@@ -13,7 +13,10 @@
 * [压缩和解压](cli-tools/mtools.md)
 * [文件查找](cli-tools/fd.md)
 * [docker管理](cli-tools/lazydocker.md)
-* [pip和venv](cli-tools/pip3.md)
+* [pip和venv](cli-tools/pip3-venv.md)
 
 ## 网络原理
 * [SMTP报文格式](network/smtp.md)
+
+## Python
+* [使用MySQL](python/mysql-connector.md)

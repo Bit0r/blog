@@ -9,8 +9,10 @@
     - [获取游标](#%E8%8E%B7%E5%8F%96%E6%B8%B8%E6%A0%87)
     - [执行SQL](#%E6%89%A7%E8%A1%8Csql)
     - [拉取结果集](#%E6%8B%89%E5%8F%96%E7%BB%93%E6%9E%9C%E9%9B%86)
+    - [拉取全部](#%E6%8B%89%E5%8F%96%E5%85%A8%E9%83%A8)
     - [游标重用](#%E6%B8%B8%E6%A0%87%E9%87%8D%E7%94%A8)
     - [关闭游标](#%E5%85%B3%E9%97%AD%E6%B8%B8%E6%A0%87)
+- [插入多行](#%E6%8F%92%E5%85%A5%E5%A4%9A%E8%A1%8C)
 - [关闭连接](#%E5%85%B3%E9%97%AD%E8%BF%9E%E6%8E%A5)
     - [提交](#%E6%8F%90%E4%BA%A4)
     - [关闭连接](#%E5%85%B3%E9%97%AD%E8%BF%9E%E6%8E%A5)
@@ -61,6 +63,7 @@ WHERE id = ?
 
 cursor.execute(query, (193, ))
 
+# result=list(cursor)
 for (activation, ) in cursor:
     print(activation)
 
@@ -79,14 +82,34 @@ cursor.close()
 语句中的`?`是占位符，每`?`占位符都与元组中的元素相对应。
 
 ## 拉取结果集
-调用过`execute`方法后，可以将`cursor`作为迭代器。
-其每次迭代将返回结果集中的一行，每一行被表示为一个`tuple`。
+调用过`execute`方法后可以对`cursor`进行迭代，每次将返回结果集中的一行，每一行被表示为一个`tuple`
+
+## 拉取全部
+如果想直接拉取全部结果，可以用`list(cursor)`来获取一个包含所有元组的列表
 
 ## 游标重用
 一个游标可以进行重复查询，但是需要确保游标的结果集已经未空——即所有的行都被拉取
 
 ## 关闭游标
 不再使用的游标需要调用`close`进行关闭。
+
+# 插入多行
+```py
+query = '''
+INSERT INTO download_link (id, download)
+VALUES (?, ?)
+'''
+cursor.executemany(query, [(1, 'http://example.com'),
+                           (2, 'http://second.example.com')])
+```
+有一个专门进行多行插入的方法`executemany`。
+该方法第一参数还是查询语句，但第二个参数需要传递一个参数元组的可迭代对象。
+
+这个方法执行时会转换查询语句来提升插入效率，例如上面的查询语句将被转换为：
+```sql
+INSERT INTO download_link (id, download)
+VALUES (?, ?), (?, ?)
+```
 
 # 关闭连接
 ```py

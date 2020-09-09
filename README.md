@@ -3,6 +3,7 @@
 * [命令行工具](#命令行工具)
 
 ## KUbuntu 20.04
+* [安装系统](kubuntu/install.md)
 * [安装使用Fcitx 5输入法](kubuntu/fcitx5.md)
 * [在KDE中解放Alt键](kubuntu/alt.md)
 * [ssh记住passphrase](kubuntu/gpg-agent.md)

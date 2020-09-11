@@ -3,45 +3,20 @@ Kubuntu 20.04默认安装时，安装的是`ibus`输入法和`fcitx4`输入法�
 而新出的`fcitx5`则在输入体验和响应速度上有了明显的提升，所以才使用`fcitx5`输入法
 
 ## 安装和配置
-1. 在**Muon**内搜索**fcitx5**，将除有`-dev`后缀的包全部安装，如图
-![fcitx5](../img/kubuntu/fcitx5/fcitx5.webp)
-
-2. 将`~/.config/fcitx5/profile`改为以下内容
-```ini
-[Groups/0]
-# Group Name
-Name=默认
-# Layout
-Default Layout=us
-# Default Input Method
-DefaultIM=pinyin
-
-[Groups/0/Items/0]
-# Name
-Name=keyboard-us
-# Layout
-Layout=
-
-[Groups/0/Items/1]
-# Name
-Name=pinyin
-# Layout
-Layout=
-
-[GroupOrder]
-0=默认
+1. 添加PPA
+```shell
+sudo add-apt-repository ppa:liuwenguo/fcitx5test
+sudo apt update
 ```
 
-3. 修改`~/.config/fcitx5/conf/pinyin.conf`，关闭云拼音
-```ini
-CloudPinyinEnabled=False
-```
+2. 在*Muon*内选择*过滤*->*按来源*->*fcitx5*，将没有`-dev`后缀的包全部安装
+![fcitx5](../img/kubuntu/fcitx5/install.webp)
 
-4. 修改`~/.config/fcitx5/config`，关闭快速短语
-```ini
-[Behavior/DisabledAddons]
-0=quickphrase
-```
+3. 转到*设置*->*区域设置*->*输入法*，勾选*显示高级选项*，然后取消勾选*全角字符*、*快速输入*、*简繁转换*和*剪贴板*
+![高级选项](../img/kubuntu/fcitx5/advanced_options.webp)
+
+4. 取消勾选*显示高级选项*，然后在*模块*->*云拼音*上点击右侧的配置按钮，选择*后端*为`Baidu`
+![云拼音](../img/kubuntu/fcitx5/cloud.webp)
 
 5. 在开始菜单里启用`Fcitx 5`
 ![start-menu](../img/kubuntu/fcitx5/start-menu.webp)

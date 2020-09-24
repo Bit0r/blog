@@ -1,6 +1,7 @@
 ## 目录
 * [Kubuntu](#Kubuntu-2004)
 * [命令行工具](#命令行工具)
+* [服务](#服务)
 
 ## KUbuntu 20.04
 * [安装系统](kubuntu/install.md)
@@ -21,3 +22,6 @@
 
 ## Python
 * [使用MySQL](python/mysql-connector.md)
+
+## 服务
+* [Gitea](services/gitea.md)

@@ -23,5 +23,8 @@
 ## Python
 * [使用MySQL](python/mysql-connector.md)
 
+## Markdown
+* [快速入门](markdown/template.md)
+
 ## 服务
 * [Gitea](services/gitea.md)

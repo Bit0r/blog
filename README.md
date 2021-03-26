@@ -1,9 +1,9 @@
 ## 目录
-* [Kubuntu](#Kubuntu-2004)
+* [Kubuntu](#Kubuntu-2010)
 * [命令行工具](#命令行工具)
 * [服务](#服务)
 
-## KUbuntu 20.04
+## KUbuntu 20.10
 * [安装系统](kubuntu/install.md)
 * [安装使用Fcitx 5输入法](kubuntu/fcitx5.md)
 * [在KDE中解放Alt键](kubuntu/alt.md)

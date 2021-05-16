@@ -11,6 +11,9 @@
 * [KDE关闭任务栏分组](kubuntu/taskbar.md)
 * [Discover无法联网](kubuntu/discover.md)
 
+## APT
+* [更新MySQL卡死](apt/mysql.md)
+
 ## 命令行工具
 * [压缩和解压](cli-tools/mtools.md)
 * [文件查找](cli-tools/fd.md)

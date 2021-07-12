@@ -10,6 +10,8 @@
 * [ssh记住passphrase](kubuntu/gpg-agent.md)
 * [KDE关闭任务栏分组](kubuntu/taskbar.md)
 * [Discover无法联网](kubuntu/discover.md)
+* [Nvidia On-Demand](kubuntu/nvidia-offload.md)
+* [Konsole](kubuntu/konsole.md)
 
 ## APT
 * [更新MySQL卡死](apt/mysql.md)
@@ -19,6 +21,7 @@
 * [文件查找](cli-tools/fd.md)
 * [docker管理](cli-tools/lazydocker.md)
 * [pip和venv](cli-tools/pip3-venv.md)
+* [sshpass](cli-tools/sshpass.md)
 
 ## 网络原理
 * [SMTP报文格式](network/smtp.md)
@@ -28,6 +31,10 @@
 
 ## Markdown
 * [快速入门](markdown/template.md)
+
+## MySQL
+* [导出CSV](mysql/export-csv.md)
+* [ERROR-1698](mysql/error-1698.md)
 
 ## 服务
 * [Gitea](services/gitea.md)

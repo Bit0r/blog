@@ -1,6 +1,11 @@
 ## 目录
-* [Kubuntu](#Kubuntu-2010)
+* [Kubuntu](#kubuntu-2010)
+* [APT](#apt)
 * [命令行工具](#命令行工具)
+* [网络原理](#网络原理)
+* [Python](#python)
+* [Markdown](#markdown)
+* [MySQL](#mysql)
 * [服务](#服务)
 
 ## KUbuntu 20.10
@@ -17,8 +22,8 @@
 * [更新MySQL卡死](apt/mysql.md)
 
 ## 命令行工具
-* [压缩和解压](cli-tools/mtools.md)
 * [文件查找](cli-tools/fd.md)
+* [文本编辑](cli-tools/sd.md)
 * [docker管理](cli-tools/lazydocker.md)
 * [pip和venv](cli-tools/pip3-venv.md)
 * [sshpass](cli-tools/sshpass.md)
@@ -33,7 +38,7 @@
 * [快速入门](markdown/template.md)
 
 ## MySQL
-* [导出CSV](mysql/export-csv.md)
+* [CSV文件](mysql/csv.md)
 * [ERROR-1698](mysql/error-1698.md)
 
 ## 服务

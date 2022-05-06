@@ -18,6 +18,9 @@
 * [Nvidia On-Demand](kubuntu/nvidia-offload.md)
 * [Konsole](kubuntu/konsole.md)
 
+## Android
+* [蓝牙](android/bluetooth.md)
+
 ## APT
 * [更新MySQL卡死](apt/mysql.md)
 

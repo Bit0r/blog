@@ -14,10 +14,12 @@
 
 在 `Ubuntu` 下，使用 `Nvidia` 来运行程序需要手动指定环境变量，开启 `Nvidia-Offload`。
 
-```dotenv
+```ini
+DRI_PRIME=1
 __NV_PRIME_RENDER_OFFLOAD=1
-__VK_LAYER_NV_optimus=NVIDIA_only
 __GLX_VENDOR_LIBRARY_NAME=nvidia
+__VK_LAYER_NV_optimus=NVIDIA_only
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.x86_64.json
 ```
 
 ## 修改应用快捷方式
@@ -33,10 +35,10 @@ __GLX_VENDOR_LIBRARY_NAME=nvidia
 这里以饥荒为例，**库**->**右键单击饥荒**->**属性**->**通用**->**启动选项**，填写以下命令。
 
 ```shell
-__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
+... %command%
 ```
 
-`%command%` 用于替代 `Steam` 将在您启动游戏时内部使用的实际游戏命令。
+`%command%` 用于替代 `Steam` 将在您启动游戏时内部使用的实际游戏命令，前面的`...`省略的是环境变量。
 
 ![steam](../img/kubuntu/nvidia-offload/steam.png)
 

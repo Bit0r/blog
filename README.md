@@ -31,6 +31,9 @@
 * [pip和venv](cli-tools/pip3-venv.md)
 * [sshpass](cli-tools/sshpass.md)
 
+## Chrome
+* [命令行选项](chrome/options/options.md)
+
 ## 网络原理
 * [SMTP报文格式](network/smtp.md)
 

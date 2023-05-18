@@ -81,3 +81,7 @@
 * [Gitea](services/gitea.md)
 
 * [网络打印](services/cups.md)
+
+## 随想
+
+* [ui技术](thoughts/ui/ui.md)

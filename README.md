@@ -32,6 +32,8 @@
 
 * [Nvidia On-Demand](kubuntu/nvidia-offload.md)
 
+* [安装多个版本的CUDA](kubuntu/cuda/cuda.md)
+
 * [Konsole](kubuntu/konsole.md)
 
 ## Android

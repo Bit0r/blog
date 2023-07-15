@@ -46,10 +46,11 @@ sudo apt install cuda-11-3
 解压cudnn安装包，这里以8.2.1为例。
 
 ```fish
-tar -xzvf cudnn-11.3-linux-x64-v8.2.1.32.tgz --directory cudnn-8-2
+mkdir -p cudnn-8-2/
+tar xvf cudnn-11.3-linux-x64-v8.2.1.32.tgz --directory cudnn-8-2
 cudnn-8-2/
-sudo cp cuda/include/cudnn*.h /usr/local/cuda-11.3/include/
-sudo cp cuda/lib64/libcudnn* /usr/local/cuda-11.3/lib64/
+sudo cp include/cudnn*.h /usr/local/cuda-11.3/include/
+sudo cp lib64/libcudnn* /usr/local/cuda-11.3/lib64/
 ```
 
 # 环境变量

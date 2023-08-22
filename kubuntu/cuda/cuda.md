@@ -4,6 +4,12 @@
 
 # CUDA
 
+## 网络安装
+
+在进行后续的本地安装之前，最好先使用网络安装方式进行安装，这两者不会冲突。
+
+使用我的[脚本](https://github.com/Bit0r/fish-config/blob/main/cuda.fish)即可
+
 ## 下载cuda
 
 在[CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive)网站上下载所需要的版本，这里以11.3.1为例。

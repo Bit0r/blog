@@ -88,3 +88,4 @@
 
 * [ui技术](thoughts/ui/ui.md)
 * [技术的“不可能三角”](thoughts/tech-trian/tech-trian.md)
+- [理想中的深度学习框架/语言](thoughts/deep-learning/deep-learning.md)

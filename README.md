@@ -87,3 +87,4 @@
 ## 随想
 
 * [ui技术](thoughts/ui/ui.md)
+* [技术的“不可能三角”](thoughts/tech-trian/tech-trian.md)

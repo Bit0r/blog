@@ -69,3 +69,14 @@ sudo cp lib64/libcudnn* /usr/local/cuda-11.3/lib64/
 ```fish
 cuda-home /usr/local/cuda-11.3
 ```
+# 问题与解决
+
+## 问题1
+
+运行`nvidia-smi`出现 `NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.` 错误。
+
+解决方法：重新安装驱动和dkms，其中`xxx`为驱动版本号。
+
+```fish
+sudo apt install --reinstall nvidia-driver-xxx nvidia-dkms-xxx
+```

@@ -67,11 +67,31 @@ sudo apt install cuda-toolkit-11-3  # 只安装cuda工具包，不会安装nvidi
 解压cudnn安装包，这里以8.2.1为例。
 
 ```fish
-mkdir -p cudnn-8-2/
-tar xvf cudnn-11.3-linux-x64-v8.2.1.32.tgz --directory cudnn-8-2
-cudnn-8-2/
-sudo cp include/cudnn*.h /usr/local/cuda-11.3/include/
-sudo cp lib64/libcudnn* /usr/local/cuda-11.3/lib64/
+unar cudnn-11.3-linux-x64-v8.2.1.32.tgz
+cd cudnn-11.3-linux-x64-v8.2.1.32/
+sudo mv ./include/* /usr/local/cuda-11.3/include/
+sudo mv ./lib64/* /usr/local/cuda-11.3/lib64/
+```
+
+# NCCL
+
+## 下载NCCL
+
+在NCCL的[下载页面](https://developer.nvidia.com/nccl/nccl-download)或[旧版本下载页面](https://developer.nvidia.com/nccl/nccl-legacy-downloads)下载和**cuda版本对应**的NCCL版本，这里以2.9.9为例。
+
+注意⚠️：必须要下载os无关的安装包。
+
+![nccl legacy](nccl.jpg)
+
+## 安装NCCL
+
+解压NCCL安装包，这里以2.9.9为例。
+
+```fish
+unar nccl_2.9.9-1+cuda11.3_x86_64.txz
+cd nccl_2.9.9-1+cuda11.3_x86_64/
+sudo mv ./lib/* /usr/local/cuda-11.3/lib64/
+sudo mv ./include/* /usr/local/cuda-11.3/include/
 ```
 
 # 环境变量

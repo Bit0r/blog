@@ -31,8 +31,8 @@ google-chrome --remote-debugging-port=9222
 以下是chrome设置代理的选项用法
 
 ```fish
-google-chrome --proxy-server='socks5h://localhost'	# socks5h代理
-google-chrome --proxy-server='http://localhost:8800'	# http代理
+google-chrome --proxy-server=socks5://localhost	# chrome只能使用socks5代理，不能使用socks5h代理
+google-chrome --proxy-server=http://localhost:8800	# http代理
 ```
 
 # 添加到.desktop文件

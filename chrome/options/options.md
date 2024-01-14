@@ -7,7 +7,7 @@ chrome有很多命令行选项，有些选项非常实用，这里介绍一些�
 以下选项可以显著减少cpu和内存消耗
 
 ```fish
-google-chrome --disable-gpu-sandbox --in-process-gpu --process-per-site --in-process-plugins
+google-chrome --in-process-gpu --process-per-site --in-process-plugins
 ```
 
 ## 给予插件更高的权限
